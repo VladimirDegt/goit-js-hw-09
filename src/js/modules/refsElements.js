@@ -9,3 +9,4 @@ export const refs = {
   seconds: document.querySelector('[data-seconds]'),
   message: document.querySelector('.message'),
 };
+
