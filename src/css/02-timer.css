@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.input {
+  display: flex;
+  gap: 20px;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 700;
+}
