@@ -1,8 +1,8 @@
 import { refs } from "../modules/refsElements";
 import { onBtnStartClick } from "./onBtnStartClick";
 
-export const onBtnStopClick = (timerIntervalId) => {
-  clearInterval(timerIntervalId);
+export const onBtnStopClick = (timerIntervalChangeColor) => {
+  clearInterval(timerIntervalChangeColor);
   refs.btnStart.removeAttribute('disabled');
   refs.btnStop.setAttribute('disabled', 'true');
 
