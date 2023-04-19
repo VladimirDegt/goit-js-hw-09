@@ -3,7 +3,7 @@ import { refs } from "../modules/refsElements";
 import { onBtnStopClick } from "./onBtnStopClick";
 
 export const onBtnStartClick = () => {
-  let timerIntervalId = setInterval( () => {
+  timerIntervalId = setInterval( () => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
   
