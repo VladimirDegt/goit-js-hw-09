@@ -8,5 +8,10 @@ export const refs = {
   minutes: document.querySelector('[data-minutes]'),
   seconds: document.querySelector('[data-seconds]'),
   message: document.querySelector('.message'),
+  form: document.querySelector('form'),
+  btnForm: document.querySelector('[type="submit"]'),
+  inputFirstDelay: document.querySelector('[name="delay"]'),
+  inputDelayStep: document.querySelector('[name="step"]'),
+  inputAmount: document.querySelector('[name="amount"]'),
 };
 
