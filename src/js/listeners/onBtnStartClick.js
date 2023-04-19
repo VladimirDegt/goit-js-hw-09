@@ -2,6 +2,8 @@ import { getRandomHexColor } from "../modules/getRandomHexColor";
 import { refs } from "../modules/refsElements";
 import { onBtnStopClick } from "./onBtnStopClick";
 
+let timerIntervalChangeColor = null;
+
 export const onBtnStartClick = () => {
   timerIntervalChangeColor = setInterval( () => {
     document.body.style.backgroundColor = getRandomHexColor();
