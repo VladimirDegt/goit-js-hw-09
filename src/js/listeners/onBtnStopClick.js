@@ -1,13 +1,14 @@
 import { refs } from "../modules/refsElements";
 import { onBtnStartClick } from "./onBtnStartClick";
 
-let timerIntervalChangeColor = null;
+import { timerIntervalChangeColor } from "./onBtnStartClick";
 
-export const onBtnStopClick = (timerIntervalChangeColor) => {
+
+export const onBtnStopClick = () => {
   clearInterval(timerIntervalChangeColor);
   refs.btnStart.removeAttribute('disabled');
   refs.btnStop.setAttribute('disabled', 'true');
 
   refs.btnStart.addEventListener('click', onBtnStartClick);
-  refs.btnStop.removeEventListener( 'click', () => {onBtnStopClick()});
+  refs.btnStop.removeEventListener( 'click', onBtnStopClick);
 };
